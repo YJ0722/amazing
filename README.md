@@ -37,6 +37,7 @@ rebase 수행시) git push -f
 
 5. merge 수행
     git merge --no-ff origin/new_branch
+    git push
 
 6. 작업이 완료된 브랜치는 삭제한다
     로컬) git branch -d new_branch
