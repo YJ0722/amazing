@@ -1,0 +1,31 @@
+# Builder
+0. Builder Pattern
+ : 복잡한 객체를 생성하는 방법과 표현하는 방법을 정의하는 클래스를 분리하여, 서로 다른 표현의 결과에 대해서도 동일한 생성 절차를 제공하는 패턴
+
+1. GoF 와 Effective Java
+ 1) GoF
+    (1) 장점
+        - 제품에 대한 내부 표현을 다양하게 변화할 수 있음
+        - 생성과 표현에 필요한 코드 분리 가능
+        - 복합 객체(Product)를 생성하는 절차를 조금 더 세밀하게 나눌 수 있음
+    (2) 구성
+        - Director : Builder를 이용해 Product를 만드는 클래스
+        - Product : Director가 Builder로 만들어낸 결과물
+        - Builder : Product를 만드는 방법을 정의하고 있는 인터페이스
+        - ConcreteBuilder : Builder 인터페이스를 구현한 클래스(Product를 만드는 방법을 구체적으로 구현)
+ 2) Effective Java
+    (1) 장점
+        - 파라미터가 많은 경우 유용
+        - 각 인자가 어떤 의미인지 알기 쉬움
+        - 한 번에 객체를 생성하므로 객체 일관성 깨지지 않음
+        - setter 메소드가 없으므로 변경 불가능한 객체를 만들 수 있음
+        - build 메소드에서 잘못된 값이 입력되었는지 검증 가능
+    (2) 생성 패턴 종류
+        - 점증적 생성자 패턴 : 생성자 오버로딩 사용하는 방법. 생성자의 멤버 변수가 많아질수록 생성자 종류 많아짐
+        - 자바빈 패턴 : setter 메소드를 이용해 필요한 값들만 setting 하도록 만든 패턴. 가독성 좋고 불필요한 생성자 오버로딩 필요 없음
+                        그러나, 객체 일관성이 깨지고 setter 메소드로 인해 변경 불가능한 클래스를 만들 수 없음
+        - 빌더 패턴 : 생성자가 private 이므로 외부에서 해당 객체를 만들 수 없으며 반드시 빌더를 통해서만 객체 생성이 가능. 생성 객체는 setter 메소드를 재공하지 않으므로 멤버 변수 값 변경이 불가능. 객체의 멤버 변수 값을 변경할 수 없으므로 immutable 객체임을 보장
+
+** 참고
+https://junhyunny.github.io/information/design-pattern/builder-pattern/
+https://ocwokocw.tistory.com/88
