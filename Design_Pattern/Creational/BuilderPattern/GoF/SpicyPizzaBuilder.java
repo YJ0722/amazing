@@ -1,4 +1,4 @@
-package ex01.gof_builder;
+package BuilderPattern.GoF;
 
 
 public class SpicyPizzaBuilder extends PizzaBuilder {

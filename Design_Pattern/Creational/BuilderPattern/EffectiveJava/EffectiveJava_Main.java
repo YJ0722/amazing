@@ -1,7 +1,7 @@
-package ex01.effective_builder;
+package BuilderPattern.EffectiveJava;
 
 /*
- * ÄÚµå ¹× ¼³¸í Âü°í
+ * ï¿½Úµï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
  *  : https://ocwokocw.tistory.com/88
  */
 public class EffectiveJava_Main {

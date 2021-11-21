@@ -1,6 +1,6 @@
-package ex01.effective_builder;
+package BuilderPattern.EffectiveJava;
 
-// Effective JavaÀÇ Builder Pattern
+// Effective Javaï¿½ï¿½ Builder Pattern
 public class FluentPizza {
 
 	private String dough;
@@ -13,9 +13,9 @@ public class FluentPizza {
 		this.topping = builder.topping;
 	}
 	
-	// FluentPizza »ý¼ºÇÏ±â Àü ½ÃÁ¡¿¡ Builder¸¦ »ç¿ëÇØ¾ß ÇÏ¹Ç·Î staticÀ¸·Î ¼±¾ð
-	// setter¿¡¼­ ¸â¹ö º¯¼ö¸¦ ÀúÀå ÈÄ build ¸Þ¼Òµå¸¦ ÅëÇØ °´Ã¼ »ý¼º ÈÄ ¸®ÅÏ 
-	// Builder ³»ºÎÀÇ setter ¸Þ¼Òµå¿¡¼­ this¸¦ ¹ÝÈ¯ÇØ¾ß ¸Þ¼Òµå Ã¼ÀÌ´× ÆÐÅÏÀ» »ç¿ëÇÒ ¼ö ÀÖÀ½.
+	// FluentPizza ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Builderï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ø¾ï¿½ ï¿½Ï¹Ç·ï¿½ staticï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+	// setterï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ build ï¿½Þ¼Òµå¸¦ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 
+	// Builder ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ setter ï¿½Þ¼Òµå¿¡ï¿½ï¿½ thisï¿½ï¿½ ï¿½ï¿½È¯ï¿½Ø¾ï¿½ ï¿½Þ¼Òµï¿½ Ã¼ï¿½Ì´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.
 	public static class Builder {
 		
 		private String dough;
@@ -37,7 +37,7 @@ public class FluentPizza {
 			return this;
 		}
 
-	     // ¿øÇÏ´Â °ªµåÀÌ ¼¼ÆÃµÇ¸é ÃÖÁ¾ÀûÀ¸·Î ÀÌ ÇÔ¼ö¸¦ ½ÇÇàÇØ¼­ °´Ã¼¸¦ ÇÏ³ª ¸¸µé¾îÁØ´Ù.
+	     // ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ÃµÇ¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ô¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ø¼ï¿½ ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½Ï³ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø´ï¿½.
 		public FluentPizza build() {
 			return new FluentPizza(this);
 		}

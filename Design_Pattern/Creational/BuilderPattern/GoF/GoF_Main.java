@@ -1,7 +1,7 @@
-package ex01.gof_builder;
+package BuilderPattern.GoF;
 
 /*
- * ÄÚµå ¹× ¼³¸í Âü°í
+ * ï¿½Úµï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
  *  : https://ocwokocw.tistory.com/88
  */
 public class GoF_Main {
