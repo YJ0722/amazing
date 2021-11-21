@@ -1,3 +1,4 @@
+package AdapterPattern.Example;
 public class AdapterPatternMain {
   public static void main(String[] args) {
     AudioPlayer audioPlayer = new AudioPlayer();

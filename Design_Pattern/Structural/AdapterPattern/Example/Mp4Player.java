@@ -1,3 +1,4 @@
+package AdapterPattern.Example;
 public class Mp4Player implements AdvancedMediaPlayer{
 
     @Override

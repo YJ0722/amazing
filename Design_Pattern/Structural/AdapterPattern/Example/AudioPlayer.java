@@ -1,3 +1,5 @@
+
+package AdapterPattern.Example;
 public class AudioPlayer implements MediaPlayer {
 
   MediaAdapter mediaAdapter;

@@ -1,3 +1,4 @@
+package AdapterPattern.Example;
 public class MediaAdapter implements MediaPlayer {
 
     AdvancedMediaPlayer advancedMusicPlayer;
