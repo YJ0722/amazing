@@ -1,4 +1,9 @@
-public class Employees implements Cloneable{
+package PrototypePattern;
+
+import java.util.ArrayList;
+import java.util.List;
+
+class Employees implements Cloneable {
  
     private List<String> empList;
 	
