@@ -12,7 +12,7 @@ public class FontFactory {
         if (cache.containsKey(family)) {
             return cache.get(family);
         } else {
-            Font newFont = new Font(family, size));
+            Font newFont = new Font(family, size);
             cache.put(family, newFont);
             return newFont;
         }
